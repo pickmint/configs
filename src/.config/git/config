@@ -1,0 +1,22 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Pickmint
+	email = 116657828+pickmint@users.noreply.github.com
+[core]
+	repositoryFormatVersion = 1
+[extensions]
+	objectFormat = sha256
+	compatObjectFormat = sha1
+[url "git@ssh.github.com:"]
+    insteadOf = gh:
+[url "git@ssh.github.com:"]
+    pushInsteadOf = gh:
+[url "gh:"]
+    insteadOf = https://github.com/
+[url "gh:"]
+    pushInsteadOf = https://github.com/
+[gpg]
+	format = ssh
+[commit]
+	# gpgsign = true

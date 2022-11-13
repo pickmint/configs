@@ -1,0 +1,2 @@
+export HISTFILE=/dev/zero
+export SAVEHIST=0
