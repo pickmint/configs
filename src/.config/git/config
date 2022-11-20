@@ -12,9 +12,9 @@
     insteadOf = gh:
 [url "git@ssh.github.com:"]
     pushInsteadOf = gh:
-[url "gh:"]
+[url "git@ssh.github.com:"]
     insteadOf = https://github.com/
-[url "gh:"]
+[url "git@ssh.github.com:"]
     pushInsteadOf = https://github.com/
 [gpg]
 	format = ssh
