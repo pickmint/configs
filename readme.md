@@ -2,7 +2,7 @@
 
 Personal User Configurations
 
-# Dependencies
+## Dependencies
 
 **Dependencies**: `GNU Make`, `GNU Stow`
 
