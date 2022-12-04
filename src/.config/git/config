@@ -12,7 +12,3 @@
     insteadOf = gh:
 [url "git@ssh.github.com:"]
     pushInsteadOf = gh:
-[url "git@ssh.github.com:"]
-    insteadOf = https://github.com/
-[url "git@ssh.github.com:"]
-    pushInsteadOf = https://github.com/
