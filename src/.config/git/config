@@ -16,7 +16,3 @@
     insteadOf = https://github.com/
 [url "git@ssh.github.com:"]
     pushInsteadOf = https://github.com/
-[gpg]
-	format = ssh
-[commit]
-	# gpgsign = true
