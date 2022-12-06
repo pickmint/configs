@@ -11,13 +11,15 @@ fi
 export XDG_DATA_HOME=${XDG_DATA_HOME:=$HOME/.local/share}
 export XDG_STATE_HOME=${XDG_STATE_HOME:=$HOME/.local/state}
 
-export LESSHISTFILE=-
+export LESSHISTFILE=- # Disable Less histroy
 
-export VISUAL="code --wait"
+if [ $VSCODE_GIT_ASKPASS_NODE ]; then
+    export VISUAL="code --wait" # enable only on VSCode
+fi
 export EDITOR=nano
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-  export MOZ_ENABLE_WAYLAND=1
+  export MOZ_ENABLE_WAYLAND=1 # Firefox Wayland
 fi
 
-SHELL_SESSIONS_DISABLE=1
+SHELL_SESSIONS_DISABLE=1 # Apple Terminal

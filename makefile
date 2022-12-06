@@ -4,7 +4,7 @@ STOW_ARGUMENT := --target=${DEST} --verbose=2
 
 install:
 	-gsettings set org.gnome.desktop.interface overlay-scrolling -bool false
-	-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Silver.png"'
+	-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Stone.png"'
 	-defaults write NSGlobalDomain AppleShowScrollBars -string Always
 	-defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
 	-defaults write com.apple.dock showhidden -bool true
