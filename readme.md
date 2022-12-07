@@ -6,7 +6,7 @@ Personal User Configurations
 
 **Dependencies**: `GNU Make`, `GNU Stow`
 
-**Optional dependencies**: `Zsh`, `Bash`, `Git`, `Nano`, `Vim`
+**Optional dependencies**: `Zsh`, `Bash`, `Git`, `Nano`, `Vim`, `Tmux`
 
 ## Installation
 
