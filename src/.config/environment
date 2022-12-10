@@ -2,6 +2,7 @@ export TZ=UTC
 
 export GIT_CEILING_DIRECTORIES=$HOME
 
+## XDG directories ##
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:=$HOME/.config}
 if [ `uname -s` != Darwin ]; then
   export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/.cache}
@@ -13,13 +14,14 @@ export XDG_STATE_HOME=${XDG_STATE_HOME:=$HOME/.local/state}
 
 export LESSHISTFILE=- # Disable Less histroy
 
-if [ $VSCODE_GIT_ASKPASS_NODE ]; then
-    export VISUAL="code --wait" # enable only on VSCode
-fi
-export EDITOR=nano
+export EDITOR=nano # Use nano because it have Emacs' keymap
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-  export MOZ_ENABLE_WAYLAND=1 # Firefox Wayland
+  export MOZ_ENABLE_WAYLAND=1 # Firefox on Wayland
 fi
 
-SHELL_SESSIONS_DISABLE=1 # Apple Terminal
+if [ $TERM_PROGRAM = "vscode" ]; then
+    export VISUAL="code --wait" # enable only on VSCode
+elif [ $TERM_PROGRAM = "Apple_Terminal" ]; then
+    SHELL_SESSIONS_DISABLE=1 # Disable Apple Terminal's weird "sessions" thing
+fi

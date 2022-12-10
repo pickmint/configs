@@ -1,2 +1,2 @@
-alias ls="ls -F"
-alias grep="grep --color=auto"
+alias ls="ls -F" # Add a `/` to folders
+alias grep="grep --color=auto" # Colourize text that grep found
