@@ -1,2 +1,8 @@
 alias ls="ls -F" # Add a `/` to folders
 alias grep="grep --color=auto" # Colourize text that grep found
+
+case `uname` in
+*Darwin)
+    alias lsblk="diskutil list" # Nearly the same
+    ;;
+esac
