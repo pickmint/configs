@@ -11,6 +11,7 @@ else
 fi
 export XDG_DATA_HOME=${XDG_DATA_HOME:=$HOME/.local/share}
 export XDG_STATE_HOME=${XDG_STATE_HOME:=$HOME/.local/state}
+export XDG_SESSION_TYPE=${XDG_SESSION_TYPE:=tty}
 
 export LESSHISTFILE=- # Disable Less histroy
 
@@ -20,8 +21,11 @@ if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
   export MOZ_ENABLE_WAYLAND=1 # Firefox on Wayland
 fi
 
-if [ $TERM_PROGRAM = "vscode" ]; then
+case "$TERM_PROGRAM" in
+vscode)
     export VISUAL="code --wait" # enable only on VSCode
-elif [ $TERM_PROGRAM = "Apple_Terminal" ]; then
+    ;;
+Apple_Terminal)
     SHELL_SESSIONS_DISABLE=1 # Disable Apple Terminal's weird "sessions" thing
-fi
+    ;;
+esac
