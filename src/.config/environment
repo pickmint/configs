@@ -4,11 +4,14 @@ export GIT_CEILING_DIRECTORIES=$HOME
 
 ## XDG directories ##
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:=$HOME/.config}
-if [ `uname -s` != Darwin ]; then
-  export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/.cache}
-else
-  export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/Library/Caches}
-fi
+case `uname` in
+Darwin)
+    export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/.cache}
+    ;;
+*)
+    export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/Library/Caches}
+    ;;
+esac
 export XDG_DATA_HOME=${XDG_DATA_HOME:=$HOME/.local/share}
 export XDG_STATE_HOME=${XDG_STATE_HOME:=$HOME/.local/state}
 export XDG_SESSION_TYPE=${XDG_SESSION_TYPE:=tty}
