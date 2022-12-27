@@ -20,9 +20,11 @@ export LESSHISTFILE=- # Disable Less histroy
 
 export EDITOR=nano # Use nano because it have Emacs' keymap
 
-if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+case "$XDG_SESSION_TYPE" in
+wayland)
   export MOZ_ENABLE_WAYLAND=1 # Firefox on Wayland
-fi
+  ;;
+esac
 
 case "$TERM_PROGRAM" in
 vscode)
