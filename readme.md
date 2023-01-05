@@ -1,4 +1,6 @@
-# User Configurations
+<center>
+    <h1>User Configurations</h1>
+</center>
 
 Personal User Configurations
 
