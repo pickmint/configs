@@ -1,5 +1,3 @@
-export TZ=UTC
-
 export GIT_CEILING_DIRECTORIES=$HOME
 
 ## XDG directories ##
@@ -34,3 +32,5 @@ Apple_Terminal)
     SHELL_SESSIONS_DISABLE=1 # Disable Apple Terminal's weird "sessions" thing
     ;;
 esac
+
+alias git="TZ=UTC git"
