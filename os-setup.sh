@@ -1,4 +1,4 @@
-#!sh
+#!bash
 case `which gsettings` in
 /*)
     gsettings=(
