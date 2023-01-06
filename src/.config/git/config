@@ -12,3 +12,9 @@
     insteadOf = gh:
 [url "git@ssh.github.com:"]
     pushInsteadOf = gh:
+[color "status"]
+    added = green ul
+    changed = red reverse ul
+    untracked = red reverse ul
+[color "branch"]
+    current = green bold ul

@@ -4,10 +4,10 @@ export GIT_CEILING_DIRECTORIES=$HOME
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:=$HOME/.config}
 case `uname` in
 Darwin)
-    export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/.cache}
+    export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/Library/Caches}
     ;;
 *)
-    export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/Library/Caches}
+    export XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/.cache}
     ;;
 esac
 export XDG_DATA_HOME=${XDG_DATA_HOME:=$HOME/.local/share}
@@ -26,7 +26,7 @@ esac
 
 case "$TERM_PROGRAM" in
 vscode)
-    export VISUAL="code --wait" # enable only on VSCode
+    export VISUAL="code --wait" # enable only in VSCode
     ;;
 Apple_Terminal)
     SHELL_SESSIONS_DISABLE=1 # Disable Apple Terminal's weird "sessions" thing

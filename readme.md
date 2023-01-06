@@ -1,4 +1,4 @@
-<h1 align=center>User Configurations</h1>
+<h1 align=center>Configurations</h1>
 
 Personal User Configurations
 
