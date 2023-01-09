@@ -1,8 +1,9 @@
 alias ls="ls -F" # Add a `/` to folders
 alias grep="grep --color=auto" # Colourize text that grep found
 
+alias view="nano --view"  # Replace Vi to Nano
 case `uname` in
-*Darwin)
+Darwin)
     alias lsblk="diskutil list" # Nearly the same
     ;;
 esac

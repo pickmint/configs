@@ -1,0 +1,8 @@
+set mouse
+
+set nohelp
+set minibar
+set titlecolor bold,normal,normal
+
+set linenumbers
+set numbercolor bold,normal,normal
