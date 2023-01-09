@@ -9,12 +9,14 @@
 	objectFormat = sha256
 	compatObjectFormat = sha1
 [url "git@ssh.github.com:"]
-    insteadOf = gh:
+	insteadOf = gh:
 [url "git@ssh.github.com:"]
-    pushInsteadOf = gh:
+	pushInsteadOf = gh:
 [color "status"]
-    added = green ul
-    changed = red reverse ul
-    untracked = red reverse ul
+	added = green ul
+	changed = red reverse ul
+	untracked = red reverse ul
 [color "branch"]
-    current = green bold ul
+	current = green bold ul
+[help]
+	autocorrect = 15

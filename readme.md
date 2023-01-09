@@ -5,18 +5,18 @@ Personal User Configurations
 
 ## Installation
 
-    Dependencies: `GNU Make`, `GNU Stow`
+	Dependencies: `GNU Make`, `GNU Stow`
 
 Before starting, please clone this repository to your
 local computer. `~/Projects/configs` is recommended.
 
 **Install**: 
 
-    make install
+	make install
 
 **Uninstall**:
 
-    make uninstall
+	make uninstall
 
 ## Licence
 
