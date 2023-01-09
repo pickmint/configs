@@ -4,7 +4,7 @@ gsettings=(
 	"org.gnome.nautilus.preferences default-folder-viewer"
 )
 gsettings_key=(
-	"-bool false"
+	"false"
 	"list-view"
 )
 macos_defaults=(
