@@ -61,8 +61,8 @@ case "$1" in
 		esac
 		case `which gsettings` in
 			/*)
-				for i in "${!gesttings[@]}"; do
-					gsettings set ${gesttings[$i]} ${gesttings_key[$i]}
+				for i in "${!gsettings[@]}"; do
+					gsettings set ${gsettings[$i]} ${gsettings_key[$i]}
 				done
 			;;
 		esac
@@ -84,7 +84,7 @@ case "$1" in
 		esac
 		case `which gsettings` in
 			/*)
-				for i in "${gesttings[@]}"; do
+				for i in "${gsettings[@]}"; do
 					gsettings reset $i
 				done
 			;;
