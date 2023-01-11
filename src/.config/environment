@@ -16,6 +16,7 @@ case `uname` in
 esac
 export XDG_SESSION_TYPE=${XDG_SESSION_TYPE:=tty}
 ZDOTDIR=$XDG_CONFIG_HOME
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
 export LESSHISTFILE=- # Disable Less histroy
 
